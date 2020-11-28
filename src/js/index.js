@@ -10,6 +10,10 @@ import "../styles/index.scss";
 
 //import your own components
 import { Home } from "./component/home.js";
+import { Excusa } from "./component/excuse"; 
 
-//render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+
+setInterval(()=>{
+    ReactDOM.render(<Excuse excuse={excuse}/>, document.querySelector("#app"));}, 5000);
+//render your react application each five seconds 
+
